@@ -1,0 +1,47 @@
+#content p a:first-child {
+    color: pink;
+}
+
+#content p a:first-child:hover {
+    color: red
+}
+
+article {
+    margin: 0px auto;
+    display: block;
+    max-width: 800px;
+    text-align: left;
+}
+
+:target {
+    animation: highlight 1s ease;
+    transform: translateX(20px);
+}
+
+@keyframes highlight {
+    0% {
+        border-left-color: red;
+    }
+    100% {
+        border-left-color: white;
+    }
+}
+
+section>h2 {
+    border-left: 40px solid white;
+    padding: 10px;
+    transition: all 0.5s ease;
+    padding-right: 50px;
+    margin-left: -20px;
+}
+
+.image {
+    border-radius: 50%;
+    height: 250px;
+    margin: 50px auto;
+    width: 250px;
+}
+
+.image:hover {
+    transform: scale(1.5);
+}
